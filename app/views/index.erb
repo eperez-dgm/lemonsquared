@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LEMONSQUARED</title>
+  <link rel="stylesheet" href="index.css" >
+  
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Oswald');
+  html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+  }
+.home-page { 
+      background: url("https://i2.wp.com/media1.giphy.com/media/xT0GqjBCkO9BEiSEOk/giphy.gif") no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 100%;
+      margin:0;
+      font-family: 'Oswald', sans-serif;
+      text-align:center;
+      color:white;
+    }
+h1 {
+  margin:0;
+  padding-top:6%;
+  font-size:6vmax;
+}
+
+h3 {
+  font-size:3vmax;
+  margin:0;
+}
+p{
+  font-size:3vmax;
+  padding-top:10%;
+}
+form {
+  padding-top:3 %;
+}
+
+input[type=submit] {
+   border:2px ;
+   height:200%;
+   width:15%;
+   background:transparent;
+   
+   
+}
+
+input[type=submit]:hover {
+    background-color: #004f99; /* Blue */
+    color: white;
+    
+}
+
+  </style>
+  
+</head>
+<body> 
+
+<!-- HOMEPAGE -->
+<div class="home-page">
+  <div class="name-header">
+      <h1>LEMONSQUARED</h1>
+  </div>
+  <div class="home-tagline">
+    <h3>Send a lemon</h3>
+  </div>
+  <form method="POST" action="/results">
+    <p>Enter Phone Number: <input type="text" name="number"></p>
+    <input type="submit" value="SEND">
+  </form>
+  
+</div>
+
+    
+</body>
+</html>

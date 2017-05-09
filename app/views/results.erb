@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Results</title>
+  <!-- links to CSS stylesheet in the public directory -->
+  <link rel="stylesheet" href="/css/index.css" >
+  
+    <style>
+  @import url('https://fonts.googleapis.com/css?family=Oswald');
+  html, body {
+    margin:0;
+    padding:0;
+    /*height:100%;*/
+  }
+.results-page { 
+      background: url("https://i2.wp.com/media1.giphy.com/media/xT0GqjBCkO9BEiSEOk/giphy.gif") no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 100%;
+      margin:0;
+      font-family: 'Oswald', sans-serif;
+      text-align:center;
+      color:white;
+    }
+    
+h1 {
+  margin:0;
+  padding-top:6%;
+  font-size:6vmax;
+}
+  </style>
+  
+</head>
+<body> 
+
+  <div class="results-page">
+    <h1>Your send this gif:<br><img src="<%= @lgif %>"></h1>
+    <h1>To this number:<br><%= @num %></h1><br>
+    <br><a href="/">Send another Lemon!</a>
+  </div>
+
+</body>
+</html>
